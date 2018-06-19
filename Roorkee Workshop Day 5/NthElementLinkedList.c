@@ -44,10 +44,6 @@ int GetNth(struct Node* head,
 {
 
     struct Node* current = head;
-
-     // the index of the
-     // node we're currently
-     // looking at
     int count = 0;
     while (current != NULL)
     {
@@ -57,11 +53,7 @@ int GetNth(struct Node* head,
         current = current->next;
     }
 
-    /* if we get to this line,
-       the caller was asking
-       for a non-existent element
-       so we assert fail */
-    assert(0);
+    return -1;
 }
 
 // Driver Code

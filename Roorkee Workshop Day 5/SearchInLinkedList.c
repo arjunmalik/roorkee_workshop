@@ -1,18 +1,14 @@
 // Iterative C program to search an element in linked list
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdbool.h
+#include<stdbool.h>
 
-/* Link list node */
 struct Node
 {
     int key;
     struct Node* next;
 };
 
-/* Given a reference (pointer to pointer) to the head
-  of a list and an int, push a new node on the front
-  of the list. */
 void push(struct Node** head_ref, int new_key)
 {
     /* allocate node */
@@ -29,7 +25,6 @@ void push(struct Node** head_ref, int new_key)
     (*head_ref)    = new_node;
 }
 
-/* Checks whether the value x is present in linked list */
 bool search(struct Node* head, int x)
 {
     struct Node* current = head;  // Initialize current

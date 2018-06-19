@@ -31,15 +31,12 @@ void push(struct Node** head_ref, int new_key)
 /* Checks whether the value x is present in linked list */
 bool search(struct Node* head, int x)
 {
-    // Base case
     if (head == NULL)
         return false;
 
-    // If key is present in current node, return true
     if (head->key == x)
         return true;
 
-    // Recur for remaining list
     return search(head->next, x);
 }
 
